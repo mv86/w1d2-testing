@@ -40,3 +40,14 @@ def number_to_full_month_name(x)
     return "September"
   end
 end
+
+def number_to_short_month_name(x)
+  case
+  when x == 1
+    return "Jan"
+  when x == 3
+    return "Mar"
+  when x == 9
+    return "Sep"
+  end
+end
