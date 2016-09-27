@@ -65,12 +65,13 @@ class Functions_Practice < MiniTest::Test
     assert_equal( "Sep", ninth_month_string )
   end
 
- #  Further
+   #Further
 
- #  Given the length of a side of a cube calculate the volume 
-#   def test_volume_of_cube()
-
-#   end
+  # Given the length of a side of a cube calculate the volume 
+  def test_volume_of_cube()
+    volume_of_cube_result = volume_of_cube(5)
+    assert_equal(125, volume_of_cube_result)
+  end
 
 #   #Given the radius of a sphere calculate the volume
 #   #Try using Ruby's PI value!
