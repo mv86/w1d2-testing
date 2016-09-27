@@ -77,7 +77,7 @@ class Functions_Practice < MiniTest::Test
   #Try using Ruby's PI value!
   def test_volume_of_sphere()
     volume_of_sphere_result = volume_of_sphere(4.0)
-    assert_equal(50.26548245743669 , volume_of_sphere_result)
+    assert_equal(50.26548245743669, volume_of_sphere_result)
   end
 
    #You can add your own converters
@@ -86,9 +86,10 @@ class Functions_Practice < MiniTest::Test
       assert_equal(-17.77777777777778, farenheit_to_celsius_result)
    end
 
-   # def test_miles_to_kilometres
-
-   # end
+   def test_miles_to_kilometres
+      miles_to_kilometres_result = miles_to_kilometres(50.0)
+      assert_equal(80.0, miles_to_kilometres_result)
+   end
 
 
  end

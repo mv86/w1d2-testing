@@ -30,31 +30,30 @@ def add_string_as_number(string, string2)
   return string.to_i + string2.to_i
 end
 
-def number_to_full_month_name(x)
+def number_to_full_month_name(int)
   case
-  when x == 1
+  when int == 1
     return "January"
-  when x == 3
+  when int == 3
     return "March"
-  when x == 9
+  when int == 9
     return "September"
   end
 end
 
-def number_to_short_month_name(x)
+def number_to_short_month_name(int)
   case
-  when x == 1
+  when int == 1
     return "Jan"
-  when x == 3
+  when int == 3
     return "Mar"
-  when x == 9
+  when int == 9
     return "Sep"
   end
 end
 
-def volume_of_cube(x)
-  volume = x ** 3
-  return volume
+def volume_of_cube(number_to_cube)
+  return number_to_cube ** 3
 end
 
 def volume_of_sphere(radius)
@@ -63,4 +62,8 @@ end
 
 def farenheit_to_celsius(farenheit)
   return (farenheit - 32.0) * 5.0 / 9.0
+end
+
+def miles_to_kilometres(miles)
+  return miles * 1.6
 end
